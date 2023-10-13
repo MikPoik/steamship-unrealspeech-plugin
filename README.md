@@ -1,4 +1,4 @@
-# Eleven Labs Generator Plugin for Steamship
+# UnrealSpeech Generator Plugin for Steamship
 
 ## Developing
 
