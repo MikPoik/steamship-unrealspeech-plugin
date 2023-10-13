@@ -1,0 +1,71 @@
+{
+	"type": "plugin",
+	"handle": "unrealspeech-tts",
+	"version": "0.0.2",
+	"description": "",
+	"author": "mpoikkilehto",
+	"entrypoint": "Unused",
+	"public": true,
+	"plugin": {
+		"isTrainable": false,
+		"transport": "jsonOverHttp",
+		"type": "generator",
+		"streaming": true
+	},
+	"build_config": {
+		"ignore": [
+			"tests",
+			"examples"
+		]
+	},
+	"configTemplate": {
+		"unrealspeech_api_key": {
+			"type": "string",
+			"description": "API key to use for UnrealSpeech. Default uses Steamship's API key.",
+			"default": ""
+		},
+		"voice_id": {
+			"type": "string",
+			"description": "Voice ID to use. Defaults to Liv",
+			"default": "Liv"
+		},
+		"temperature": {
+			"type": "number",
+			"description": "voice temperature",
+			"default": 0.5
+		},
+		"bitrate": {
+			"type": "string",
+			"description": "voice bitrate",
+			"default": "128k"
+		},
+		"pitch": {
+			"type": "number",
+			"description": "voice pitch",
+			"default": 1.0
+		},
+		"speed": {
+			"type": "number",
+			"description": "voice speed",
+			"default": 0.1
+		}
+	},
+	"steamshipRegistry": {
+		"tagline": null,
+		"tagline2": null,
+		"usefulFor": null,
+		"videoUrl": null,
+		"githubUrl": null,
+		"demoUrl": null,
+		"blogUrl": null,
+		"jupyterUrl": null,
+		"authorGithub": null,
+		"authorName": "mpoikkilehto",
+		"authorEmail": null,
+		"authorTwitter": null,
+		"authorUrl": null,
+		"tags": [
+			"Prompt API"
+		]
+	}
+}

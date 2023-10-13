@@ -1,0 +1,2 @@
+requests
+git+https://github.com/steamship-core/python-client.git
